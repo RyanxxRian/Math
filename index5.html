@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    
+    
+        
+        <div id="js_timer">
+            <div id="timer">
+                00:00
+            </div>
+            <div id="count2">Your Score :</div>
+<div id="count">
+    0
+</div>
+<td><div  id="wrong">
+    0
+</div></td>
+</tr>
+            
+    
+
+        <h1 id="hell">Welcome to Math Quiz :)</h1>
+    <div class="container">
+        <div class="ques">
+            <div class="box1">
+                <input type="text" id="v1">
+            </div>
+            <p id="operation"> + </p>
+            <div class="box1">
+                <input type="text" id="v2">
+           </div>
+        </div>
+        <div class="midbox">
+            <input type="number" id="answ">
+        </div>
+        <div class="check">
+            <button onclick="hello()" id="check">Check</button>
+         
+        </div>
+    </div>
+   
+    
+    <script>
+    
+    
+
+       var timer;
+var ele = document.getElementById('timer');
+let sec = 0
+   sec = sec + 1 ;
+ var helloooo
+ hel = setInterval(countdown,1000) ;
+
+function countdown(){
+   ele.innerHTML = 'Countdown : ' + sec
+   sec++
+   if(sec > 999){
+    clearInterval(hel);
+    alert ('Your Score is : '+ countel.innerHTML) ;
+   }
+}
+
+
+
+
+      
+
+
+
+let n1 = Math.floor(Math.random()*100+ 1)
+    let n2 = Math.floor(Math.random()*100 + 1)
+    
+     document.getElementById('v1').value = n1
+     document.getElementById('v2').value = n2 
+    
+    let countel = document.getElementById('count') 
+    let ans = n1 + n2
+    let count = 0
+    let hol = 0
+    let scores = document.getElementById('hell2').innerHTML
+       function hello(){
+      let  wrong = document.getElementById('wrong')
+        var cool = document.getElementById('answ').value; 
+        
+        if(cool == ans){
+            count = count + 1 ;
+            countel.innerHTML =   count ;
+        }else  {
+            hol = hol + 1 ;
+            wrong.innerHTML = hol
+        }
+
+        var cool = document.getElementById('answ').value = " ";
+    
+     n1 = Math.floor(Math.random()*100+ 1)
+     n2 = Math.floor(Math.random()*100 + 1)
+    
+     document.getElementById('v1').value = n1
+     document.getElementById('v2').value = n2 
+     ans = n1 + n2 
+
+    
+    }
+     
+      
+
+
+</script>
+</body>
+</html>

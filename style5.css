@@ -1,0 +1,97 @@
+*{
+    margin: 0vh;
+    padding: 0vw;
+}
+ body{
+    align-items: center;
+    background-color: rgb(34, 197, 197);
+    
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+   .container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+.ques{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#v1, #v2{
+    text-align: center;
+    padding: 1vh 4vw;
+    width: 12vw;
+    font-size: 5vh;
+}
+p{
+    font-size: 10vh;
+    margin: 0 8px 0px 13px ;
+}
+#hell{
+  align-items: center;
+}
+
+#answ{
+    text-align: center;
+    padding: 4vh 3vw;
+    width: 27vw;
+    font-size: 30px;
+}
+
+#check{
+    position: relative;
+    top: 20px;
+    height: 10vh;
+    width: 24vw;
+    border-radius: 27px;
+    font-size: 15px;
+}
+
+
+#count{
+    font-size: 41px;
+    position: relative;
+    right: -247px;
+    top: -133px;
+    background-color: green;
+    width: 20px;
+}
+
+#count2{
+    font-size: 41px;
+    position: relative;
+    right: -29px;
+    top: -94px;
+    
+}
+#timer{
+    font-size: 6vh;
+    position: relative;
+    top: -109px;
+}
+
+#list{
+    position: relative;
+    top: 134px;
+    right: 100px;
+}
+#wrong{
+    position: relative;
+    top: -184px;
+    font-size: 45px;
+    right: -281px;
+    background-color: red;
+    width: 20px;
+}
